@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Archive — Anu Kadyan</title>
+<meta name="description" content="Anu Kadyan, PhD — climate and energy policy researcher: battery storage, clean electrification supply chains, geothermal finance and clean-tech investment.">
+<meta property="og:title" content="Archive — Anu Kadyan">
+<meta property="og:image" content="images/headshot.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#0B5E52;text-decoration:none}a:hover{color:#06352E;text-decoration:underline}
+</style>
+</head>
+<body>
+<div style="width: 100%; min-height: 100vh; background: #FFFFFF; color: #13211F; font-family: Inter, system-ui, sans-serif; font-size: 16px; line-height: 1.6">
+
+<header style="border-bottom: 1px solid #E3E8E7; background: #FFFFFF">
+<div style="max-width: 1120px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="index.html" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px; color: #13211F; letter-spacing: -0.01em">Anu Kadyan</a>
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 4px 24px; font-size: 15px; font-weight: 500">
+<a href="research.html" style="color: #13211F; padding: 10px 0">Research</a>
+<a href="policy.html" style="color: #13211F; padding: 10px 0">Policy papers</a>
+<a href="talks.html" style="color: #13211F; padding: 10px 0">Writing &amp; talks</a>
+<a href="archive.html" aria-current="page" style="color: #0B5E52; padding: 10px 0; font-weight: 600; text-decoration: underline; text-underline-offset: 6px">Archive</a>
+<a href="cv.html" style="color: #13211F; padding: 10px 0">CV</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section style="max-width: 1120px; margin: 0 auto; padding: 64px 24px 24px">
+<h1 style="margin: 0 0 16px; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 48px; line-height: 1.1; letter-spacing: -0.02em">Archive</h1>
+<p style="margin: 0 0 32px; font-size: 19px; color: #2B3A38; max-width: 720px">Everything in one place: research, policy papers, talks, competitions and publications. Filter by topic.</p>
+<div id="chips" role="group" aria-label="Filter by topic" style="display: flex; flex-wrap: wrap; gap: 10px"></div>
+</section>
+<section style="max-width: 1120px; margin: 0 auto; padding: 8px 24px 56px">
+<p id="count" style="margin: 0 0 8px; font-size: 14px; font-weight: 600; color: #4A5856"></p>
+<div id="list"></div>
+</section>
+</main>
+<style>
+.chip{min-height:44px;padding:0 18px;border-radius:999px;border:1px solid #C9D3D1;background:#fff;color:#13211F;font:500 15px Inter,sans-serif;cursor:pointer}
+.chip[aria-pressed="true"]{background:#0B5E52;border-color:#0B5E52;color:#fff;font-weight:600}
+.item{display:flex;flex-wrap:wrap;gap:6px 32px;padding:22px 0;border-bottom:1px solid #E3E8E7}
+.item .when{flex:0 0 160px}.item .when p{margin:0;font-size:13px;color:#4A5856}.item .when p:first-child{font-size:14px;font-weight:600}
+.item .what{flex:999 1 520px;min-width:0}
+.item h2{margin:0 0 4px;font:600 20px/1.35 'Space Grotesk',sans-serif}.item h2 a{color:#13211F}
+.item .meta{margin:0 0 10px;font-size:15px;color:#44524F}
+.tags{display:flex;flex-wrap:wrap;gap:8px}.tags span{font-size:13px;font-weight:500;padding:4px 10px;border-radius:999px;background:#E3F2EE;color:#0B4F45}
+</style>
+<script>
+(function(){
+
+    var pubs = 'research.html#publications';
+    var items = [
+      { year: 'Forthcoming', kind: 'Report', title: 'Report to the Hawaiʻi State Legislature on geothermal development', meta: 'Hawaiʻi State Energy Office · Co-author', href: 'policy.html', tags: ['Geothermal'] },
+      { year: '2026', kind: 'Competition', title: 'Loadmatch: runner-up at the GridTech Hackathon', meta: 'Energy Symposium GridTech Hackathon · Columbia Energy Association', href: 'https://loadmatch.vercel.app/', tags: ['Grid & data centers', 'Energy storage'] },
+      { year: '2026', kind: 'Talk', title: 'Beyond Innovation: Scaling Technologies for a Sustainable Earth', meta: 'Green Frontier Connect · SIIC, IIT Kanpur', href: 'talks.html', tags: ['Clean-tech investment'] },
+      { year: '2026', kind: 'Research', title: 'Mapping the clean electrification supply chain', meta: 'Dataset paper in preparation for Scientific Data · Lead author', href: 'research.html', tags: ['Electrification'] },
+      { year: '2026', kind: 'Research', title: 'Techno-economics of battery storage', meta: 'Climate Knowledge Initiative, Columbia Business School', href: 'research.html', tags: ['Energy storage'] },
+      { year: '2026', kind: 'Research', title: 'Electric school buses on the grid', meta: 'U.S. Electric School Bus Initiative, World Resources Institute', href: 'research.html', tags: ['Grid & data centers', 'Electrification', 'Energy storage'] },
+      { year: '2026', kind: 'Policy paper', title: "Beneath the Subsurface: Unlocking Hawaiʻi's Geothermal Potential", meta: 'SIPA CEE Practicum · Data Analysis Lead', href: 'policy.html', tags: ['Geothermal', 'Climate finance'] },
+      { year: '2026', kind: 'Policy memo', title: 'Does Microfinance Reduce Poverty?', meta: 'Quantitative Analysis II, Columbia SIPA', href: 'policy.html', tags: ['Development'] },
+      { year: '2026', kind: 'Policy memo', title: 'Climate-Aligned Performance Benchmarks for Sovereign Borrowers', meta: 'Financing and Investing in Sustainable Development, Columbia SIPA', href: 'policy.html', tags: ['Climate finance'] },
+      { year: '2025', kind: 'Policy paper', title: "The EU's Industrial Policy in the EV Sector: Learning from China", meta: 'Global Energy Policy, Columbia SIPA', href: 'policy.html', tags: ['EV policy', 'Electrification'] },
+      { year: '2020–2024', kind: 'Program', title: 'EV and clean-tech investment facilitation, Startup India', meta: 'Invest India, Ministry of Commerce & Industry', href: 'cv.html', tags: ['Clean-tech investment', 'EV policy'] },
+      { year: '2020–2024', kind: 'Program', title: 'Districts as Export Hubs and One District One Product', meta: 'Invest India, with DGFT', href: 'cv.html', tags: ['Development'] },
+      { year: '2019', kind: 'Journal article', title: 'Photophysical behavior and fluorescence quenching of l-tryptophan in choline chloride-based deep eutectic solvents', meta: 'The Journal of Physical Chemistry B', href: pubs, tags: ['Green chemistry'] },
+      { year: '2019', kind: 'Journal article', title: 'Probing interactions within liquid media via a model H-bond donor–acceptor mixture', meta: 'Physical Chemistry Chemical Physics', href: pubs, tags: ['Green chemistry'] },
+      { year: '2018', kind: 'Journal article', title: 'Fluorescence quenching within lithium salt-added ionic liquid', meta: 'The Journal of Physical Chemistry B', href: pubs, tags: ['Green chemistry'] },
+      { year: '2018', kind: 'Journal article', title: 'Densities and dynamic viscosities of a LiTf2N-added [emim][Tf2N] ionic liquid mixture (298.15–358.15 K)', meta: 'The Journal of Chemical Thermodynamics', href: pubs, tags: ['Green chemistry'] },
+      { year: '2017', kind: 'Journal article', title: 'Microviscosity offered by ionic liquids and ionic liquid–glycol mixtures is probe dependent', meta: 'The Journal of Physical Chemistry B', href: pubs, tags: ['Green chemistry'] },
+      { year: '2016', kind: 'Journal article', title: 'Hybrid green nonaqueous media: tetraethylene glycol modifies a (choline chloride + urea) deep eutectic solvent', meta: 'RSC Advances', href: pubs, tags: ['Green chemistry'] },
+      { year: '2015', kind: 'Journal article', title: 'Ionic liquid-based optical and electrochemical carbon dioxide sensors', meta: 'Sensors', href: pubs, tags: ['Green chemistry'] }
+    ];
+    
+var names = ['All', 'Energy storage', 'Electrification', 'Grid & data centers', 'Geothermal', 'EV policy', 'Climate finance', 'Clean-tech investment', 'Development', 'Green chemistry'];
+var chips=document.getElementById('chips'),list=document.getElementById('list'),count=document.getElementById('count');
+function esc(t){var d=document.createElement('div');d.textContent=t;return d.innerHTML;}
+var picked=new URLSearchParams(location.search).get('topic');if(names.indexOf(picked)<0)picked='All';
+function render(){
+chips.innerHTML='';
+names.forEach(function(n){var c=n==='All'?items.length:items.filter(function(i){return i.tags.indexOf(n)>=0}).length;
+var b=document.createElement('button');b.type='button';b.className='chip';b.setAttribute('aria-pressed',n===picked);b.textContent=n+' · '+c;
+b.onclick=function(){picked=n;var u=new URL(location);if(n==='All')u.searchParams.delete('topic');else u.searchParams.set('topic',n);history.replaceState(null,'',u);render();};chips.appendChild(b);});
+var shown=items.filter(function(i){return picked==='All'||i.tags.indexOf(picked)>=0});
+count.textContent=shown.length+(shown.length===1?' item':' items')+(picked==='All'?'':' in '+picked);
+list.innerHTML=shown.map(function(i){return '<article class="item"><div class="when"><p>'+esc(i.year)+'</p><p>'+esc(i.kind)+'</p></div><div class="what"><h2><a href="'+i.href+'">'+esc(i.title)+'</a></h2><p class="meta">'+esc(i.meta)+'</p><div class="tags">'+i.tags.map(function(t){return '<span>'+esc(t)+'</span>'}).join('')+'</div></div></article>'}).join('');
+}
+render();
+})();
+</script>
+
+
+<footer style="border-top: 1px solid #E3E8E7">
+<div style="max-width: 1120px; margin: 0 auto; padding: 40px 24px 48px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; align-items: center">
+<p style="margin: 0; color: #44524F">New York, NY · <a href="mailto:ak5441@columbia.edu">ak5441@columbia.edu</a></p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 15px">
+<a href="https://www.linkedin.com/in/anu-kadyan-sipa/" style="padding: 10px 0">LinkedIn</a>
+<a href="https://scholar.google.com/citations?user=Tr4B36cAAAAJ&amp;hl=en" style="padding: 10px 0">Google Scholar</a>
+<span style="padding: 10px 0; color: #4A5856">© 2026 Anu Kadyan</span>
+</div>
+</div>
+</footer>
+
+</div>
+</body>
+</html>
