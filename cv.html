@@ -13,19 +13,48 @@
 body{margin:0;background:#FFFFFF}
 a{color:#0B5E52;text-decoration:none}a:hover{color:#06352E;text-decoration:underline}
 </style>
+<style>
+/* Bold & energetic theme */
+:root{--navy:#0B1B2B;--navy2:#13283D;--volt:#3DDC97;--amber:#FFB020}
+body{background:#FFFFFF}
+a{color:#0A7A52}a:hover{color:#06573A}
+header{background:var(--navy)!important;border-bottom:0!important;position:sticky;top:0;z-index:10}
+header > div > a{color:#FFFFFF!important}
+header nav a{color:#D3E0EC!important}
+header nav a:hover{color:#FFFFFF!important;text-decoration:none!important}
+header nav a[aria-current]{color:var(--volt)!important}
+main > section:first-of-type{border-image:linear-gradient(var(--navy) 0 0) fill 0 / 0 / 0 100vmax;background:var(--navy)}
+header + main, header ~ main{margin-top:0}
+@media (max-width:640px){main > section:first-of-type h1{font-size:44px!important}}
+main > section:first-of-type h1{color:#FFFFFF!important}
+main > section:first-of-type p{color:#C9D7E4!important}
+main > section:first-of-type p:first-child{color:var(--volt)!important}
+main > section:first-of-type a{color:#7FE8B8!important}
+main > section:first-of-type a[style*="background"]{background:var(--volt)!important;color:var(--navy)!important}
+main > section:first-of-type a[style*="border: 1px"]{color:#FFFFFF!important;border-color:#4A6580!important}
+main > section:first-of-type a[style*="border: 1px"]:hover{border-color:var(--volt)!important;text-decoration:none}
+main > section:first-of-type img{box-shadow:0 0 0 6px var(--volt)}
+main > section:first-of-type button.chip{background:transparent;color:#FFFFFF;border-color:#4A6580}
+main > section:first-of-type button.chip[aria-pressed="true"]{background:var(--volt);border-color:var(--volt);color:var(--navy)}
+h2{letter-spacing:-0.02em}
+main > section:first-of-type + section{padding-top:48px!important}
+footer{background:var(--navy)!important;border-top:4px solid var(--volt)!important}
+footer p, footer span{color:#AFC0D0!important}
+footer a{color:var(--volt)!important}
+</style>
 </head>
 <body>
-<div style="width: 100%; min-height: 100vh; background: #FFFFFF; color: #13211F; font-family: Inter, system-ui, sans-serif; font-size: 16px; line-height: 1.6">
+<div style="width: 100%; min-height: 100vh; background: #FFFFFF; color: #0B1B2B; font-family: Inter, system-ui, sans-serif; font-size: 16px; line-height: 1.6">
 
 <header style="border-bottom: 1px solid #E3E8E7; background: #FFFFFF">
 <div style="max-width: 1120px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
-<a href="index.html" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px; color: #13211F; letter-spacing: -0.01em">Anu Kadyan</a>
+<a href="index.html" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px; color: #0B1B2B; letter-spacing: -0.01em">Anu Kadyan</a>
 <nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 4px 24px; font-size: 15px; font-weight: 500">
-<a href="research.html" style="color: #13211F; padding: 10px 0">Research</a>
-<a href="policy.html" style="color: #13211F; padding: 10px 0">Policy papers</a>
-<a href="talks.html" style="color: #13211F; padding: 10px 0">Writing &amp; talks</a>
-<a href="archive.html" style="color: #13211F; padding: 10px 0">Archive</a>
-<a href="cv.html" aria-current="page" style="color: #0B5E52; padding: 10px 0; font-weight: 600; text-decoration: underline; text-underline-offset: 6px">CV</a>
+<a href="research.html" style="color: #0B1B2B; padding: 10px 0">Research</a>
+<a href="policy.html" style="color: #0B1B2B; padding: 10px 0">Policy papers</a>
+<a href="talks.html" style="color: #0B1B2B; padding: 10px 0">Writing &amp; talks</a>
+<a href="archive.html" style="color: #0B1B2B; padding: 10px 0">Archive</a>
+<a href="cv.html" aria-current="page" style="color: #0A7A52; padding: 10px 0; font-weight: 600; text-decoration: underline; text-underline-offset: 6px">CV</a>
 </nav>
 </div>
 </header>
@@ -33,15 +62,15 @@ a{color:#0B5E52;text-decoration:none}a:hover{color:#06352E;text-decoration:under
 <main>
 <section style="max-width: 1120px; margin: 0 auto; padding: 64px 24px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
 <div style="flex: 999 1 520px; min-width: 0">
-<h1 style="margin: 0 0 16px; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 48px; line-height: 1.1; letter-spacing: -0.02em">CV</h1>
-<p style="margin: 0; font-size: 19px; color: #2B3A38; max-width: 680px">Climate and energy policy researcher with four years in government investment facilitation and a PhD in physical chemistry.</p>
+<h1 style="margin: 0 0 16px; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 60px; line-height: 1.05; letter-spacing: -0.02em">CV</h1>
+<p style="margin: 0; font-size: 19px; color: #2B3A38; max-width: 680px">Chemist turned energy strategist, with four years in government investment facilitation and a PhD in chemistry.</p>
 </div>
-<a href="#" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border-radius: 999px; font-size: 15px; font-weight: 600; color: #FFFFFF; background: #0B5E52">Download CV (PDF) [ADD LINK]</a>
+<a href="#" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border-radius: 999px; font-size: 15px; font-weight: 600; color: #FFFFFF; background: #0B1B2B">Download CV (PDF) [ADD LINK]</a>
 </section>
 
 <section style="max-width: 1120px; margin: 0 auto; padding: 24px 24px 56px; display: flex; flex-wrap: wrap; gap: 48px">
 <div style="flex: 999 1 560px; min-width: 0">
-<h2 style="margin: 0 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 600">Experience</h2>
+<h2 style="margin: 0 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 700">Experience</h2>
 
 <div style="display: flex; flex-wrap: wrap; gap: 4px 24px; padding: 22px 0; border-bottom: 1px solid #E3E8E7">
 <p style="flex: 0 0 120px; margin: 0; font-size: 14px; font-weight: 600; color: #4A5856">2026–now</p>
@@ -88,7 +117,10 @@ a{color:#0B5E52;text-decoration:none}a:hover{color:#06352E;text-decoration:under
 <li>Led EV, clean-tech and agritech investment facilitation under Startup India.</li>
 <li>Ran the States' Startup Ranking Framework across 33 states and union territories, drawing on 10,000+ stakeholder surveys.</li>
 <li>Supported India's rise to 39th in the Global Innovation Index.</li>
-<li>Program lead for Districts as Export Hubs with DGFT; community projects under One District One Product.</li>
+<li>Program lead for Districts as Export Hubs with DGFT; community projects under <a href="https://www.investindia.gov.in/one-district-one-product" target="_blank" rel="noopener">One District One Product</a>.</li>
+<li>Part of the ODOP team that onboarded 150+ artisans from 12+ craft communities in Kutch, Gujarat, onto e-commerce platforms through 32 days of training in product photography, packaging and digital selling (2021).</li>
+<li>Co-organized the Startup India Exhibition at the 2nd G20 Trade and Investment Working Group Meeting, Bengaluru (2023), showcasing deep-tech startups to G20 delegates.</li>
+<li>Member of the Startup India senior officials delegation to the Republic of Korea (2023), marking 50 years of India–Korea diplomatic ties.</li>
 </ul>
 </div>
 </div>
@@ -122,20 +154,22 @@ a{color:#0B5E52;text-decoration:none}a:hover{color:#06352E;text-decoration:under
 </div>
 
 <aside style="flex: 1 1 300px; min-width: 0">
-<h2 style="margin: 0 0 16px; font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 600">Education</h2>
+<h2 style="margin: 0 0 16px; font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 700">Education</h2>
 <div style="display: flex; flex-direction: column; gap: 18px; margin-bottom: 40px">
 <div><strong style="font-weight: 600">MPA, Climate, Energy &amp; Environment Policy</strong><br><span style="color: #44524F">Columbia University, SIPA · 2027</span></div>
-<div><strong style="font-weight: 600">PhD, Physical Chemistry</strong><br><span style="color: #44524F">IIT Delhi · 2019</span></div>
+<div><strong style="font-weight: 600">PhD, Chemistry</strong><br><span style="color: #44524F">IIT Delhi · 2019</span></div>
 <div><strong style="font-weight: 600">M.Sc., Organic Chemistry</strong><br><span style="color: #44524F">University of Delhi · 2014</span></div>
 <div><strong style="font-weight: 600">B.Sc. (Honours), Chemistry</strong><br><span style="color: #44524F">Miranda House, University of Delhi · 2012</span></div>
 </div>
-<h2 style="margin: 0 0 16px; font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 600">Awards</h2>
+<h2 style="margin: 0 0 16px; font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 700">Awards</h2>
 <div style="display: flex; flex-direction: column; gap: 18px; margin-bottom: 40px">
 <div><strong style="font-weight: 600">Runner-up team, Energy Symposium GridTech Hackathon</strong><br><span style="color: #44524F">Columbia Energy Association · 2026 · for <a href="https://loadmatch.vercel.app/">Loadmatch</a></span></div>
+<div><strong style="font-weight: 600">Semifinalist, SIPA Global Policy Challenge</strong><br><span style="color: #44524F">Columbia SIPA · 2026 · for TerraBamboo, a bamboo biochar and carbon finance model</span></div>
+<div><strong style="font-weight: 600">Distinction in Doctoral Research Award</strong><br><span style="color: #44524F">IIT Delhi · for PhD thesis</span></div>
 <div><strong style="font-weight: 600">IRD Early-Doc Fellowship</strong><br><span style="color: #44524F">IIT Delhi</span></div>
 <div><strong style="font-weight: 600">Summer Research Fellowship</strong><br><span style="color: #44524F">National Chemical Laboratory · 2013</span></div>
 </div>
-<h2 style="margin: 0 0 16px; font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 600">Languages</h2>
+<h2 style="margin: 0 0 16px; font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 700">Languages</h2>
 <p style="margin: 0; color: #44524F">English, Hindi (full professional) · German (limited working)</p>
 </aside>
 </section>

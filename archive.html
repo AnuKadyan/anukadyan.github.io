@@ -13,26 +13,55 @@
 body{margin:0;background:#FFFFFF}
 a{color:#0B5E52;text-decoration:none}a:hover{color:#06352E;text-decoration:underline}
 </style>
+<style>
+/* Bold & energetic theme */
+:root{--navy:#0B1B2B;--navy2:#13283D;--volt:#3DDC97;--amber:#FFB020}
+body{background:#FFFFFF}
+a{color:#0A7A52}a:hover{color:#06573A}
+header{background:var(--navy)!important;border-bottom:0!important;position:sticky;top:0;z-index:10}
+header > div > a{color:#FFFFFF!important}
+header nav a{color:#D3E0EC!important}
+header nav a:hover{color:#FFFFFF!important;text-decoration:none!important}
+header nav a[aria-current]{color:var(--volt)!important}
+main > section:first-of-type{border-image:linear-gradient(var(--navy) 0 0) fill 0 / 0 / 0 100vmax;background:var(--navy)}
+header + main, header ~ main{margin-top:0}
+@media (max-width:640px){main > section:first-of-type h1{font-size:44px!important}}
+main > section:first-of-type h1{color:#FFFFFF!important}
+main > section:first-of-type p{color:#C9D7E4!important}
+main > section:first-of-type p:first-child{color:var(--volt)!important}
+main > section:first-of-type a{color:#7FE8B8!important}
+main > section:first-of-type a[style*="background"]{background:var(--volt)!important;color:var(--navy)!important}
+main > section:first-of-type a[style*="border: 1px"]{color:#FFFFFF!important;border-color:#4A6580!important}
+main > section:first-of-type a[style*="border: 1px"]:hover{border-color:var(--volt)!important;text-decoration:none}
+main > section:first-of-type img{box-shadow:0 0 0 6px var(--volt)}
+main > section:first-of-type button.chip{background:transparent;color:#FFFFFF;border-color:#4A6580}
+main > section:first-of-type button.chip[aria-pressed="true"]{background:var(--volt);border-color:var(--volt);color:var(--navy)}
+h2{letter-spacing:-0.02em}
+main > section:first-of-type + section{padding-top:48px!important}
+footer{background:var(--navy)!important;border-top:4px solid var(--volt)!important}
+footer p, footer span{color:#AFC0D0!important}
+footer a{color:var(--volt)!important}
+</style>
 </head>
 <body>
-<div style="width: 100%; min-height: 100vh; background: #FFFFFF; color: #13211F; font-family: Inter, system-ui, sans-serif; font-size: 16px; line-height: 1.6">
+<div style="width: 100%; min-height: 100vh; background: #FFFFFF; color: #0B1B2B; font-family: Inter, system-ui, sans-serif; font-size: 16px; line-height: 1.6">
 
 <header style="border-bottom: 1px solid #E3E8E7; background: #FFFFFF">
 <div style="max-width: 1120px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
-<a href="index.html" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px; color: #13211F; letter-spacing: -0.01em">Anu Kadyan</a>
+<a href="index.html" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px; color: #0B1B2B; letter-spacing: -0.01em">Anu Kadyan</a>
 <nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 4px 24px; font-size: 15px; font-weight: 500">
-<a href="research.html" style="color: #13211F; padding: 10px 0">Research</a>
-<a href="policy.html" style="color: #13211F; padding: 10px 0">Policy papers</a>
-<a href="talks.html" style="color: #13211F; padding: 10px 0">Writing &amp; talks</a>
-<a href="archive.html" aria-current="page" style="color: #0B5E52; padding: 10px 0; font-weight: 600; text-decoration: underline; text-underline-offset: 6px">Archive</a>
-<a href="cv.html" style="color: #13211F; padding: 10px 0">CV</a>
+<a href="research.html" style="color: #0B1B2B; padding: 10px 0">Research</a>
+<a href="policy.html" style="color: #0B1B2B; padding: 10px 0">Policy papers</a>
+<a href="talks.html" style="color: #0B1B2B; padding: 10px 0">Writing &amp; talks</a>
+<a href="archive.html" aria-current="page" style="color: #0A7A52; padding: 10px 0; font-weight: 600; text-decoration: underline; text-underline-offset: 6px">Archive</a>
+<a href="cv.html" style="color: #0B1B2B; padding: 10px 0">CV</a>
 </nav>
 </div>
 </header>
 
 <main>
 <section style="max-width: 1120px; margin: 0 auto; padding: 64px 24px 24px">
-<h1 style="margin: 0 0 16px; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 48px; line-height: 1.1; letter-spacing: -0.02em">Archive</h1>
+<h1 style="margin: 0 0 16px; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 60px; line-height: 1.05; letter-spacing: -0.02em">Archive</h1>
 <p style="margin: 0 0 32px; font-size: 19px; color: #2B3A38; max-width: 720px">Everything in one place: research, policy papers, talks, competitions and publications. Filter by topic.</p>
 <div id="chips" role="group" aria-label="Filter by topic" style="display: flex; flex-wrap: wrap; gap: 10px"></div>
 </section>
@@ -42,12 +71,12 @@ a{color:#0B5E52;text-decoration:none}a:hover{color:#06352E;text-decoration:under
 </section>
 </main>
 <style>
-.chip{min-height:44px;padding:0 18px;border-radius:999px;border:1px solid #C9D3D1;background:#fff;color:#13211F;font:500 15px Inter,sans-serif;cursor:pointer}
-.chip[aria-pressed="true"]{background:#0B5E52;border-color:#0B5E52;color:#fff;font-weight:600}
+.chip{min-height:44px;padding:0 18px;border-radius:999px;border:1px solid #4A6580;background:transparent;color:#fff;font:500 15px Inter,sans-serif;cursor:pointer}
+.chip[aria-pressed="true"]{background:#3DDC97;border-color:#3DDC97;color:#0B1B2B;font-weight:600}
 .item{display:flex;flex-wrap:wrap;gap:6px 32px;padding:22px 0;border-bottom:1px solid #E3E8E7}
 .item .when{flex:0 0 160px}.item .when p{margin:0;font-size:13px;color:#4A5856}.item .when p:first-child{font-size:14px;font-weight:600}
 .item .what{flex:999 1 520px;min-width:0}
-.item h2{margin:0 0 4px;font:600 20px/1.35 'Space Grotesk',sans-serif}.item h2 a{color:#13211F}
+.item h2{margin:0 0 4px;font:600 20px/1.35 'Space Grotesk',sans-serif}.item h2 a{color:#0B1B2B}
 .item .meta{margin:0 0 10px;font-size:15px;color:#44524F}
 .tags{display:flex;flex-wrap:wrap;gap:8px}.tags span{font-size:13px;font-weight:500;padding:4px 10px;border-radius:999px;background:#E3F2EE;color:#0B4F45}
 </style>
@@ -58,7 +87,10 @@ a{color:#0B5E52;text-decoration:none}a:hover{color:#06352E;text-decoration:under
     var items = [
       { year: 'Forthcoming', kind: 'Report', title: 'Report to the Hawaiʻi State Legislature on geothermal development', meta: 'Hawaiʻi State Energy Office · Co-author', href: 'policy.html', tags: ['Geothermal'] },
       { year: '2026', kind: 'Competition', title: 'Loadmatch: runner-up at the GridTech Hackathon', meta: 'Energy Symposium GridTech Hackathon · Columbia Energy Association', href: 'https://loadmatch.vercel.app/', tags: ['Grid & data centers', 'Energy storage'] },
-      { year: '2026', kind: 'Talk', title: 'Beyond Innovation: Scaling Technologies for a Sustainable Earth', meta: 'Green Frontier Connect · SIIC, IIT Kanpur', href: 'talks.html', tags: ['Clean-tech investment'] },
+      { year: '2026', kind: 'Competition', title: 'TerraBamboo: semifinalist, SIPA Global Policy Challenge', meta: 'Community bamboo biochar and carbon finance for Meghalaya, India', href: 'talks.html', tags: ['Climate finance', 'Development'] },
+      { year: '2026', kind: 'Event', title: 'How Can Data Centers Catalyze Battery Circularity in the United States?', meta: 'Climate Week NYC 2026 · World Resources Institute closed-door session', href: 'talks.html', tags: ['Energy storage', 'Grid & data centers'] },
+      { year: '2026', kind: 'Research', title: 'Second-life EV batteries for data centers', meta: 'Landscape assessment · World Resources Institute', href: 'research.html', tags: ['Energy storage', 'Grid & data centers'] },
+      { year: '2026', kind: 'Talk', title: 'Beyond Innovation: Scaling Technologies for a Sustainable Earth', meta: 'Webinar · Green Frontier Connect, SIIC IIT Kanpur', href: 'talks.html', tags: ['Clean-tech investment'] },
       { year: '2026', kind: 'Research', title: 'Mapping the clean electrification supply chain', meta: 'Dataset paper in preparation for Scientific Data · Lead author', href: 'research.html', tags: ['Electrification'] },
       { year: '2026', kind: 'Research', title: 'Techno-economics of battery storage', meta: 'Climate Knowledge Initiative, Columbia Business School', href: 'research.html', tags: ['Energy storage'] },
       { year: '2026', kind: 'Research', title: 'Electric school buses on the grid', meta: 'U.S. Electric School Bus Initiative, World Resources Institute', href: 'research.html', tags: ['Grid & data centers', 'Electrification', 'Energy storage'] },
@@ -66,6 +98,14 @@ a{color:#0B5E52;text-decoration:none}a:hover{color:#06352E;text-decoration:under
       { year: '2026', kind: 'Policy memo', title: 'Does Microfinance Reduce Poverty?', meta: 'Quantitative Analysis II, Columbia SIPA', href: 'policy.html', tags: ['Development'] },
       { year: '2026', kind: 'Policy memo', title: 'Climate-Aligned Performance Benchmarks for Sovereign Borrowers', meta: 'Financing and Investing in Sustainable Development, Columbia SIPA', href: 'policy.html', tags: ['Climate finance'] },
       { year: '2025', kind: 'Policy paper', title: "The EU's Industrial Policy in the EV Sector: Learning from China", meta: 'Global Energy Policy, Columbia SIPA', href: 'policy.html', tags: ['EV policy', 'Electrification'] },
+      { year: '2024', kind: 'Talk', title: 'Startup India and BHASKAR: a platform for your startup dreams', meta: 'Speaker · The Vedica Scholars Programme for Women', href: 'talks.html', tags: ['Clean-tech investment'] },
+      { year: '2024', kind: 'Talk', title: 'Enabling Smart Mobility: AI Applications in Transportation (host and moderator)', meta: 'Startup India panel at the Invest India Pavilion, Bharat Mobility Global Expo 2024', href: 'talks.html', tags: ['EV policy', 'Clean-tech investment'] },
+      { year: '2024', kind: 'Talk', title: "Host: National Startup Awards and States' Startup Ranking 2022 results", meta: 'National Startup Day · Startup India · Bharat Mandapam, New Delhi', href: 'talks.html', tags: ['Clean-tech investment'] },
+      { year: '2023', kind: 'Delegation', title: 'Startup India delegation to the Republic of Korea', meta: 'Delegation member · 50 years of India–Korea diplomatic ties', href: 'talks.html', tags: ['Clean-tech investment'] },
+      { year: '2023', kind: 'Event', title: 'Startup India Exhibition at the G20 Trade and Investment Working Group', meta: 'Co-organizer · Bengaluru', href: 'talks.html', tags: ['Clean-tech investment'] },
+      { year: '2022', kind: 'Talk', title: 'Taking district products global: exports for agriculture, handloom and handicrafts', meta: 'Odisha Buyer Seller Meet, One District One Product · Bhubaneswar', href: 'talks.html', tags: ['Development'] },
+      { year: '2021', kind: 'Field project', title: "Bringing Kutch's crafts online: 150+ artisans onboarded to e-commerce", meta: 'One District One Product team, Invest India · Kutch, Gujarat', href: 'talks.html', tags: ['Development'] },
+      { year: '2021', kind: 'Field visit', title: 'Meeting the growers of Lakadong turmeric', meta: 'One District One Product team, Invest India · West Jaintia Hills, Meghalaya', href: 'talks.html', tags: ['Development'] },
       { year: '2020–2024', kind: 'Program', title: 'EV and clean-tech investment facilitation, Startup India', meta: 'Invest India, Ministry of Commerce & Industry', href: 'cv.html', tags: ['Clean-tech investment', 'EV policy'] },
       { year: '2020–2024', kind: 'Program', title: 'Districts as Export Hubs and One District One Product', meta: 'Invest India, with DGFT', href: 'cv.html', tags: ['Development'] },
       { year: '2019', kind: 'Journal article', title: 'Photophysical behavior and fluorescence quenching of l-tryptophan in choline chloride-based deep eutectic solvents', meta: 'The Journal of Physical Chemistry B', href: pubs, tags: ['Green chemistry'] },

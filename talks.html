@@ -13,55 +13,186 @@
 body{margin:0;background:#FFFFFF}
 a{color:#0B5E52;text-decoration:none}a:hover{color:#06352E;text-decoration:underline}
 </style>
+<style>
+/* Bold & energetic theme */
+:root{--navy:#0B1B2B;--navy2:#13283D;--volt:#3DDC97;--amber:#FFB020}
+body{background:#FFFFFF}
+a{color:#0A7A52}a:hover{color:#06573A}
+header{background:var(--navy)!important;border-bottom:0!important;position:sticky;top:0;z-index:10}
+header > div > a{color:#FFFFFF!important}
+header nav a{color:#D3E0EC!important}
+header nav a:hover{color:#FFFFFF!important;text-decoration:none!important}
+header nav a[aria-current]{color:var(--volt)!important}
+main > section:first-of-type{border-image:linear-gradient(var(--navy) 0 0) fill 0 / 0 / 0 100vmax;background:var(--navy)}
+header + main, header ~ main{margin-top:0}
+@media (max-width:640px){main > section:first-of-type h1{font-size:44px!important}}
+main > section:first-of-type h1{color:#FFFFFF!important}
+main > section:first-of-type p{color:#C9D7E4!important}
+main > section:first-of-type p:first-child{color:var(--volt)!important}
+main > section:first-of-type a{color:#7FE8B8!important}
+main > section:first-of-type a[style*="background"]{background:var(--volt)!important;color:var(--navy)!important}
+main > section:first-of-type a[style*="border: 1px"]{color:#FFFFFF!important;border-color:#4A6580!important}
+main > section:first-of-type a[style*="border: 1px"]:hover{border-color:var(--volt)!important;text-decoration:none}
+main > section:first-of-type img{box-shadow:0 0 0 6px var(--volt)}
+main > section:first-of-type button.chip{background:transparent;color:#FFFFFF;border-color:#4A6580}
+main > section:first-of-type button.chip[aria-pressed="true"]{background:var(--volt);border-color:var(--volt);color:var(--navy)}
+h2{letter-spacing:-0.02em}
+main > section:first-of-type + section{padding-top:48px!important}
+footer{background:var(--navy)!important;border-top:4px solid var(--volt)!important}
+footer p, footer span{color:#AFC0D0!important}
+footer a{color:var(--volt)!important}
+</style>
 </head>
 <body>
-<div style="width: 100%; min-height: 100vh; background: #FFFFFF; color: #13211F; font-family: Inter, system-ui, sans-serif; font-size: 16px; line-height: 1.6">
+<div style="width: 100%; min-height: 100vh; background: #FFFFFF; color: #0B1B2B; font-family: Inter, system-ui, sans-serif; font-size: 16px; line-height: 1.6">
 
 <header style="border-bottom: 1px solid #E3E8E7; background: #FFFFFF">
 <div style="max-width: 1120px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
-<a href="index.html" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px; color: #13211F; letter-spacing: -0.01em">Anu Kadyan</a>
+<a href="index.html" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px; color: #0B1B2B; letter-spacing: -0.01em">Anu Kadyan</a>
 <nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 4px 24px; font-size: 15px; font-weight: 500">
-<a href="research.html" style="color: #13211F; padding: 10px 0">Research</a>
-<a href="policy.html" style="color: #13211F; padding: 10px 0">Policy papers</a>
-<a href="talks.html" aria-current="page" style="color: #0B5E52; padding: 10px 0; font-weight: 600; text-decoration: underline; text-underline-offset: 6px">Writing &amp; talks</a>
-<a href="archive.html" style="color: #13211F; padding: 10px 0">Archive</a>
-<a href="cv.html" style="color: #13211F; padding: 10px 0">CV</a>
+<a href="research.html" style="color: #0B1B2B; padding: 10px 0">Research</a>
+<a href="policy.html" style="color: #0B1B2B; padding: 10px 0">Policy papers</a>
+<a href="talks.html" aria-current="page" style="color: #0A7A52; padding: 10px 0; font-weight: 600; text-decoration: underline; text-underline-offset: 6px">Writing &amp; talks</a>
+<a href="archive.html" style="color: #0B1B2B; padding: 10px 0">Archive</a>
+<a href="cv.html" style="color: #0B1B2B; padding: 10px 0">CV</a>
 </nav>
 </div>
 </header>
 
 <main>
 <section style="max-width: 1120px; margin: 0 auto; padding: 64px 24px 32px">
-<h1 style="margin: 0 0 16px; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 48px; line-height: 1.1; letter-spacing: -0.02em">Writing &amp; talks</h1>
+<h1 style="margin: 0 0 16px; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 60px; line-height: 1.05; letter-spacing: -0.02em">Writing &amp; talks</h1>
 <p style="margin: 0; font-size: 19px; color: #2B3A38; max-width: 720px">Talks, competitions and essays on scaling climate technology and the energy transition.</p>
 </section>
 
 <section style="max-width: 1120px; margin: 0 auto; padding: 8px 24px 32px">
-<h2 style="margin: 0 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 600">Talks</h2>
-<article style="display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 24px 0; border-bottom: 1px solid #E3E8E7">
+<h2 style="margin: 0 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 700">Talks</h2>
+
+<article style="display: flex; flex-wrap: wrap; gap: 24px 32px; padding: 24px 0; border-bottom: 1px solid #E3E8E7">
 <p style="flex: 0 0 160px; margin: 0; font-size: 14px; font-weight: 600; color: #4A5856">Oct 7, 2026</p>
-<div style="flex: 999 1 520px; min-width: 0">
+<div style="flex: 999 1 400px; min-width: 0">
 <h3 style="margin: 0 0 4px; font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600">Beyond Innovation: Scaling Technologies for a Sustainable Earth</h3>
-<p style="margin: 0; color: #44524F">Green Frontier Connect · SIIC, IIT Kanpur</p>
+<p style="margin: 0 0 8px; color: #44524F">Speaker · Green Frontier Connect webinar · Startup Incubation and Innovation Centre, IIT Kanpur, with the Ministry of Housing and Urban Affairs · Online</p>
+<p style="margin: 0; color: #2B3A38">On what it takes to move climate technologies from the lab to deployment at scale.</p>
 </div>
+<div style="flex: 1 1 260px; max-width: 360px"><img src="green-frontier-webinar.jpg" alt="Webinar poster: Green Frontier Connect, Beyond Innovation: Scaling Technologies for a Sustainable Earth, speaker Dr. Anu Kadyan, October 7, 2026" style="display: block; width: 100%; aspect-ratio: 8 / 5; object-fit: contain; background: #DCE8D0; border-radius: 10px"></div>
+</article>
+<article style="display: flex; flex-wrap: wrap; gap: 24px 32px; padding: 24px 0; border-bottom: 1px solid #E3E8E7">
+<p style="flex: 0 0 160px; margin: 0; font-size: 14px; font-weight: 600; color: #4A5856">Sep 2026</p>
+<div style="flex: 999 1 400px; min-width: 0">
+<h3 style="margin: 0 0 4px; font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600">How Can Data Centers Catalyze Battery Circularity in the United States?</h3>
+<p style="margin: 0 0 8px; color: #44524F">Research contributor and roundtable participant · Closed-door session hosted by the World Resources Institute · Climate Week NYC 2026</p>
+<p style="margin: 0; color: #2B3A38">My summer landscape assessment at WRI, on how data centers can catalyze battery circularity in the U.S., became a closed-door session with data center operators, battery makers, recyclers, think tanks and startups. The key takeaway: the bottleneck isn't technology but collection logistics, transparent performance data and regulatory classification.</p>
+</div>
+<div style="flex: 1 1 260px; max-width: 360px"><img src="climate-week-roundtable.jpg" alt="Anu Kadyan leading a roundtable discussion at a WRI session on data centers and battery circularity during Climate Week NYC 2026" style="display: block; width: 100%; aspect-ratio: 8 / 5; object-fit: cover; object-position: center 40%; border-radius: 10px"></div>
+</article>
+<article style="display: flex; flex-wrap: wrap; gap: 24px 32px; padding: 24px 0; border-bottom: 1px solid #E3E8E7">
+<p style="flex: 0 0 160px; margin: 0; font-size: 14px; font-weight: 600; color: #4A5856">Nov 2024</p>
+<div style="flex: 999 1 400px; min-width: 0">
+<h3 style="margin: 0 0 4px; font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600">Startup India and BHASKAR: a platform for your startup dreams</h3>
+<p style="margin: 0 0 8px; color: #44524F">Speaker, with Ragini Kumar · The Vedica Scholars Programme for Women</p>
+<p style="margin: 0; color: #2B3A38">Introduced students to Startup India's initiatives and to the Bharat Startup Knowledge Access Registry (BHASKAR), a new digital platform connecting students, startups, investors and mentors.</p>
+</div>
+<div style="flex: 1 1 260px; max-width: 360px"><img src="bhaskar-talk.jpg" alt="Anu Kadyan speaking to students at the Vedica Scholars Programme for Women about Startup India and BHASKAR" style="display: block; width: 100%; aspect-ratio: 8 / 5; object-fit: cover; object-position: center 30%; border-radius: 10px"></div>
+</article>
+<article style="display: flex; flex-wrap: wrap; gap: 24px 32px; padding: 24px 0; border-bottom: 1px solid #E3E8E7">
+<p style="flex: 0 0 160px; margin: 0; font-size: 14px; font-weight: 600; color: #4A5856">Feb 2, 2024</p>
+<div style="flex: 999 1 400px; min-width: 0">
+<h3 style="margin: 0 0 4px; font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600">Enabling Smart Mobility: AI Applications in Transportation</h3>
+<p style="margin: 0 0 8px; color: #44524F">Host and moderator · "AI-Driven Journeys" session by Startup India at the Invest India Pavilion, Bharat Mobility Global Expo 2024 · Bharat Mandapam, New Delhi</p>
+<p style="margin: 0; color: #2B3A38">Moderated a panel with Kanv Garg (Chief Growth Officer, BluSmart, Gensol Group), Seemant Shankar (Chief Product Officer, Droom Technology) and Gaurav Gupta (MG Motor India) on AI's impact on public and EV transport, how companies build AI into their products, and AI's role in reaching net-zero emissions.</p>
+</div>
+<div style="flex: 1 1 260px; max-width: 360px"><img src="mobility-panel.jpg" alt="Anu Kadyan moderating the panel on stage at Bharat Mobility Global Expo 2024" style="display: block; width: 100%; aspect-ratio: 8 / 5; object-fit: cover; object-position: 70% center; border-radius: 10px"></div>
+</article>
+<article style="display: flex; flex-wrap: wrap; gap: 24px 32px; padding: 24px 0; border-bottom: 1px solid #E3E8E7">
+<p style="flex: 0 0 160px; margin: 0; font-size: 14px; font-weight: 600; color: #4A5856">Jan 16, 2024</p>
+<div style="flex: 999 1 400px; min-width: 0">
+<h3 style="margin: 0 0 4px; font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600">Results of the National Startup Awards and States' Startup Ranking 2022</h3>
+<p style="margin: 0 0 8px; color: #44524F">Host · National Startup Day, marking Startup India's 8th anniversary · In the presence of Union Minister of Commerce &amp; Industry Shri Piyush Goyal · Bharat Mandapam, New Delhi</p>
+<p style="margin: 0; color: #2B3A38">Hosted the national ceremony and announced the results. I was also part of the Startup India team behind the States' Startup Ranking 2022, a year of evaluation and stakeholder feedback surveys across states and union territories.</p>
+</div>
+<div style="flex: 1 1 260px; max-width: 360px"><img src="startup-ranking.jpg" alt="Anu Kadyan at the podium as master of ceremonies at the declaration of results for the National Startup Awards and States' Startup Ranking" style="display: block; width: 100%; aspect-ratio: 8 / 5; object-fit: cover; object-position: center; border-radius: 10px"></div>
+</article>
+<article style="display: flex; flex-wrap: wrap; gap: 24px 32px; padding: 24px 0; border-bottom: 1px solid #E3E8E7">
+<p style="flex: 0 0 160px; margin: 0; font-size: 14px; font-weight: 600; color: #4A5856">Sep 29, 2022</p>
+<div style="flex: 999 1 400px; min-width: 0">
+<h3 style="margin: 0 0 4px; font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600">Taking district products global: exports for agriculture, handloom and handicrafts</h3>
+<p style="margin: 0 0 8px; color: #44524F">Speaker · Odisha Buyer Seller Meet, One District One Product · Invest India and DPIIT, with the Government of Odisha · Bhubaneswar</p>
+<p style="margin: 0; color: #2B3A38">Spoke to producers and exporters on global market demand for Odisha's agricultural, handloom and handicraft products, the basic steps to start exporting, and the government schemes that support them.</p>
+</div>
+<div style="flex: 1 1 260px; max-width: 360px"><img src="odisha-bsm.jpg" alt="Anu Kadyan speaking at the Odisha Buyer Seller Meet organized under One District One Product in Bhubaneswar" style="display: block; width: 100%; aspect-ratio: 8 / 5; object-fit: cover; object-position: left center; border-radius: 10px"></div>
+</article>
+<article style="display: flex; flex-wrap: wrap; gap: 24px 32px; padding: 24px 0; border-bottom: 1px solid #E3E8E7">
+<p style="flex: 0 0 160px; margin: 0; font-size: 14px; font-weight: 600; color: #4A5856">Jul 2021</p>
+<div style="flex: 999 1 400px; min-width: 0">
+<h3 style="margin: 0 0 4px; font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600">Bringing Kutch's crafts online</h3>
+<p style="margin: 0 0 8px; color: #44524F">Field project · One District One Product team, Invest India · Kutch, Gujarat</p>
+<p style="margin: 0; color: #2B3A38">Part of the team that onboarded 150+ artisans from more than 12 craft communities onto e-commerce platforms, through 32 days of hands-on training in product photography, packaging and digital selling.</p>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 16px">
+<img src="kutch-embroidery.jpg" alt="With a Kutch embroidery artisan and her work during the onboarding visit" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 8px">
+<img src="kutch-loom.jpg" alt="A handloom weaver at work in Kutch" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 8px">
+<img src="kutch-charkha.jpg" alt="Anu Kadyan learning to spin on a charkha at a weaving centre in Kutch" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 8px">
+</div>
+</div>
+<div style="flex: 1 1 260px; max-width: 360px"><img src="kutch-onboarding.jpg" alt="Anu Kadyan onboarding a weaver onto an e-commerce platform at his workshop in Kutch" style="display: block; width: 100%; aspect-ratio: 8 / 5; object-fit: cover; border-radius: 10px"></div>
+</article>
+<article style="display: flex; flex-wrap: wrap; gap: 24px 32px; padding: 24px 0; border-bottom: 1px solid #E3E8E7">
+<p style="flex: 0 0 160px; margin: 0; font-size: 14px; font-weight: 600; color: #4A5856">Jan 2021</p>
+<div style="flex: 999 1 400px; min-width: 0">
+<h3 style="margin: 0 0 4px; font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600">Meeting the growers of Lakadong turmeric</h3>
+<p style="margin: 0 0 8px; color: #44524F">Field visit · One District One Product team, Invest India · West Jaintia Hills, Meghalaya</p>
+<p style="margin: 0; color: #2B3A38">My first field visit with the ODOP team: meeting Lakadong turmeric farmers and women-led self-help groups. Lakadong has among the world's highest curcumin content (7–9%), and the visit focused on how growers and budding women entrepreneurs could reach wider markets with it.</p>
+</div>
+<div style="flex: 1 1 260px; max-width: 360px"><img src="lakadong-turmeric.jpg" alt="Hands holding freshly cut Lakadong turmeric showing its deep orange colour, during a field visit in West Jaintia Hills" style="display: block; width: 100%; aspect-ratio: 8 / 5; object-fit: cover; border-radius: 10px"></div>
 </article>
 </section>
 
 <section style="max-width: 1120px; margin: 0 auto; padding: 8px 24px 32px">
-<h2 style="margin: 0 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 600">Competitions</h2>
+<h2 style="margin: 0 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 700">International engagement</h2>
+<article style="display: flex; flex-wrap: wrap; gap: 24px 32px; padding: 24px 0; border-bottom: 1px solid #E3E8E7">
+<p style="flex: 0 0 160px; margin: 0; font-size: 14px; font-weight: 600; color: #4A5856">2023</p>
+<div style="flex: 999 1 400px; min-width: 0">
+<h3 style="margin: 0 0 4px; font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600">Startup India delegation to the Republic of Korea</h3>
+<p style="margin: 0 0 8px; color: #44524F">Delegation member · Seoul and Pangyo Techno Valley, South Korea</p>
+<p style="margin: 0; color: #2B3A38">Member of a Startup India senior officials delegation to the Republic of Korea, led by Ms. Manmeet Kaur Nanda, marking 50 years of India–Korea diplomatic ties. A week of strategic meetings and site visits with Korea's Ministry of SMEs and Startups, Pangyo Techno Valley, the Korean Venture Capital Association and the Korea International Trade Association (KITA), where we studied programs such as Fortune 500 Connect, Global Testbed Initiatives and Next Rise for global collaboration and scaling. With UNIDO and d·camp, the delegation explored collaboration on connecting Korean startups with target markets and on their advisory partnerships with Ethiopia, Peru and Uzbekistan.</p>
+</div>
+<div style="flex: 1 1 260px; max-width: 360px"><img src="korea-delegation.jpg" alt="Anu Kadyan outside Pangyo Techno Valley under a sign welcoming the Startup India Senior Officials Delegation" style="display: block; width: 100%; aspect-ratio: 8 / 5; object-fit: cover; object-position: center; border-radius: 10px"></div>
+</article>
+<article style="display: flex; flex-wrap: wrap; gap: 24px 32px; padding: 24px 0; border-bottom: 1px solid #E3E8E7">
+<p style="flex: 0 0 160px; margin: 0; font-size: 14px; font-weight: 600; color: #4A5856">May 23–25, 2023</p>
+<div style="flex: 999 1 400px; min-width: 0">
+<h3 style="margin: 0 0 4px; font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600">Startup India Exhibition at the G20 Trade and Investment Working Group</h3>
+<p style="margin: 0 0 8px; color: #44524F">Co-organizer, with Shaurya Bhaglal · 2nd G20 TIWG Meeting, India's G20 Presidency · Bengaluru</p>
+<p style="margin: 0; color: #2B3A38">Organized the Startup India exhibition end to end on a tight timeline, showcasing four deep-tech startups to G20 delegates and opening networking and partnership opportunities for them.</p>
+</div>
+
+<div style="flex: 1 1 260px; max-width: 360px"><img src="g20-exhibition.jpg" alt="Anu Kadyan with the organizing team and startup founders at the Startup India exhibition stand, G20 Trade and Investment Working Group meeting, Bengaluru" style="display: block; width: 100%; aspect-ratio: 8 / 5; object-fit: cover; object-position: center; border-radius: 10px"></div>
+</article>
+</section>
+
+<section style="max-width: 1120px; margin: 0 auto; padding: 8px 24px 32px">
+<h2 style="margin: 0 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 700">Competitions</h2>
 <article style="display: flex; flex-wrap: wrap; gap: 24px 32px; padding: 24px 0; border-bottom: 1px solid #E3E8E7">
 <div style="flex: 999 1 480px; min-width: 0">
-<h3 style="margin: 0 0 4px; font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600"><a href="https://loadmatch.vercel.app/" style="color: #13211F">Loadmatch: runner-up at the GridTech Hackathon</a></h3>
+<h3 style="margin: 0 0 4px; font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600"><a href="https://loadmatch.vercel.app/" style="color: #0B1B2B">Loadmatch: runner-up at the GridTech Hackathon</a></h3>
 <p style="margin: 0 0 12px; color: #44524F">Energy Symposium GridTech Hackathon · Columbia Energy Association · 2026 · with Kiran Lakshmisha, Leah Ndumi Kioko and Mohak Sharma</p>
-<p style="margin: 0 0 12px; color: #2B3A38">Challenge: power a 75 MW Texas data center campus with no grid connection for 18 months. In eight hours we built a tool that simulates every hour over ten years on 2023 ERCOT data and compares the fastest, cheapest and cleanest builds, including what happens when interconnection slips.</p>
+<p style="margin: 0 0 12px; color: #2B3A38">Challenge: power a 75 MW Texas data center campus with no grid connection for 18 months. In eight hours we built a tool that simulates every hour over ten years on 2023 ERCOT data and compares the fastest, cheapest and cleanest builds, including what happens when interconnection slips. We pitched it under its working name, Zodiac.</p>
 <a href="https://loadmatch.vercel.app/" style="font-size: 15px; font-weight: 600">Try Loadmatch →</a>
 </div>
-<a href="https://loadmatch.vercel.app/" style="flex: 1 1 280px; max-width: 400px; display: block"><img src="loadmatch.png" alt="Loadmatch app: a data center campus with wind, solar and gas, and a menu of priorities" style="display: block; width: 100%; aspect-ratio: 8 / 5; object-fit: cover; object-position: left top; border-radius: 10px; background: #0E1A33"></a>
+<a href="https://loadmatch.vercel.app/" style="flex: 1 1 280px; max-width: 400px; display: block"><img src="hackathon-pitch.jpg" alt="Anu Kadyan presenting Loadmatch, then called Zodiac, with her team at the GridTech Hackathon final presentations" style="display: block; width: 100%; aspect-ratio: 8 / 5; object-fit: cover; object-position: center; border-radius: 10px"></a>
+</article>
+<article style="display: flex; flex-wrap: wrap; gap: 24px 32px; padding: 24px 0; border-bottom: 1px solid #E3E8E7">
+<div style="flex: 999 1 480px; min-width: 0">
+<h3 style="margin: 0 0 4px; font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600">TerraBamboo: semifinalist, SIPA Global Policy Challenge</h3>
+<p style="margin: 0 0 12px; color: #44524F">SIPA Global Policy Challenge 2026 · with Gunanka D. Basavaraju and Apoorva D. Poornima</p>
+<p style="margin: 0; color: #2B3A38">A community-led model to restore Meghalaya's eroded, acidic hill soils: village cooperatives turn bamboo waste into biochar, funded by biochar sales and high-integrity carbon removal credits, with 70% of carbon revenue going to the community. The roadmap scales from a pilot in Ri-Bhoi to 300 cooperative hubs across Northeast India.</p>
+</div>
+<div style="flex: 1 1 280px; max-width: 400px"><img src="terrabamboo.jpg" alt="TerraBamboo title slide: Healing the Tribal Hills, with a map of Meghalaya" style="display: block; width: 100%; aspect-ratio: 8 / 5; object-fit: cover; object-position: left center; border-radius: 10px; background: #FFFFFF; border: 1px solid #E3E8E7"></div>
 </article>
 </section>
 
 <section style="max-width: 1120px; margin: 0 auto; padding: 8px 24px 56px">
-<h2 style="margin: 0 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 600">Writing</h2>
+<h2 style="margin: 0 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 700">Writing</h2>
 <article style="display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 24px 0; border-bottom: 1px solid #E3E8E7">
 <p style="flex: 0 0 160px; margin: 0; font-size: 14px; font-weight: 600; color: #4A5856">Forthcoming</p>
 <div style="flex: 999 1 520px; min-width: 0">
@@ -76,7 +207,7 @@ a{color:#0B5E52;text-decoration:none}a:hover{color:#06352E;text-decoration:under
 <p style="margin: 0; color: #44524F">Development Editor, Editorial Outreach · American Chemical Society</p>
 </div>
 </article>
-<div style="margin-top: 24px; padding: 24px 28px; background: #F4F7F6; border-radius: 12px">
+<div style="margin-top: 24px; padding: 24px 28px; background: #EEF3F8; border-radius: 12px">
 <p style="margin: 0">Interested in having me speak or write on energy storage, data center power or clean-tech investment? <a href="mailto:ak5441@columbia.edu" style="font-weight: 600">Get in touch</a>.</p>
 </div>
 </section>

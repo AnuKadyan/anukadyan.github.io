@@ -13,26 +13,55 @@
 body{margin:0;background:#FFFFFF}
 a{color:#0B5E52;text-decoration:none}a:hover{color:#06352E;text-decoration:underline}
 </style>
+<style>
+/* Bold & energetic theme */
+:root{--navy:#0B1B2B;--navy2:#13283D;--volt:#3DDC97;--amber:#FFB020}
+body{background:#FFFFFF}
+a{color:#0A7A52}a:hover{color:#06573A}
+header{background:var(--navy)!important;border-bottom:0!important;position:sticky;top:0;z-index:10}
+header > div > a{color:#FFFFFF!important}
+header nav a{color:#D3E0EC!important}
+header nav a:hover{color:#FFFFFF!important;text-decoration:none!important}
+header nav a[aria-current]{color:var(--volt)!important}
+main > section:first-of-type{border-image:linear-gradient(var(--navy) 0 0) fill 0 / 0 / 0 100vmax;background:var(--navy)}
+header + main, header ~ main{margin-top:0}
+@media (max-width:640px){main > section:first-of-type h1{font-size:44px!important}}
+main > section:first-of-type h1{color:#FFFFFF!important}
+main > section:first-of-type p{color:#C9D7E4!important}
+main > section:first-of-type p:first-child{color:var(--volt)!important}
+main > section:first-of-type a{color:#7FE8B8!important}
+main > section:first-of-type a[style*="background"]{background:var(--volt)!important;color:var(--navy)!important}
+main > section:first-of-type a[style*="border: 1px"]{color:#FFFFFF!important;border-color:#4A6580!important}
+main > section:first-of-type a[style*="border: 1px"]:hover{border-color:var(--volt)!important;text-decoration:none}
+main > section:first-of-type img{box-shadow:0 0 0 6px var(--volt)}
+main > section:first-of-type button.chip{background:transparent;color:#FFFFFF;border-color:#4A6580}
+main > section:first-of-type button.chip[aria-pressed="true"]{background:var(--volt);border-color:var(--volt);color:var(--navy)}
+h2{letter-spacing:-0.02em}
+main > section:first-of-type + section{padding-top:48px!important}
+footer{background:var(--navy)!important;border-top:4px solid var(--volt)!important}
+footer p, footer span{color:#AFC0D0!important}
+footer a{color:var(--volt)!important}
+</style>
 </head>
 <body>
-<div style="width: 100%; min-height: 100vh; background: #FFFFFF; color: #13211F; font-family: Inter, system-ui, sans-serif; font-size: 16px; line-height: 1.6">
+<div style="width: 100%; min-height: 100vh; background: #FFFFFF; color: #0B1B2B; font-family: Inter, system-ui, sans-serif; font-size: 16px; line-height: 1.6">
 
 <header style="border-bottom: 1px solid #E3E8E7; background: #FFFFFF">
 <div style="max-width: 1120px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
-<a href="index.html" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px; color: #13211F; letter-spacing: -0.01em">Anu Kadyan</a>
+<a href="index.html" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px; color: #0B1B2B; letter-spacing: -0.01em">Anu Kadyan</a>
 <nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 4px 24px; font-size: 15px; font-weight: 500">
-<a href="research.html" style="color: #13211F; padding: 10px 0">Research</a>
-<a href="policy.html" aria-current="page" style="color: #0B5E52; padding: 10px 0; font-weight: 600; text-decoration: underline; text-underline-offset: 6px">Policy papers</a>
-<a href="talks.html" style="color: #13211F; padding: 10px 0">Writing &amp; talks</a>
-<a href="archive.html" style="color: #13211F; padding: 10px 0">Archive</a>
-<a href="cv.html" style="color: #13211F; padding: 10px 0">CV</a>
+<a href="research.html" style="color: #0B1B2B; padding: 10px 0">Research</a>
+<a href="policy.html" aria-current="page" style="color: #0A7A52; padding: 10px 0; font-weight: 600; text-decoration: underline; text-underline-offset: 6px">Policy papers</a>
+<a href="talks.html" style="color: #0B1B2B; padding: 10px 0">Writing &amp; talks</a>
+<a href="archive.html" style="color: #0B1B2B; padding: 10px 0">Archive</a>
+<a href="cv.html" style="color: #0B1B2B; padding: 10px 0">CV</a>
 </nav>
 </div>
 </header>
 
 <main>
 <section style="max-width: 1120px; margin: 0 auto; padding: 64px 24px 32px">
-<h1 style="margin: 0 0 16px; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 48px; line-height: 1.1; letter-spacing: -0.02em">Policy papers</h1>
+<h1 style="margin: 0 0 16px; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 60px; line-height: 1.05; letter-spacing: -0.02em">Policy papers</h1>
 <p style="margin: 0; font-size: 19px; color: #2B3A38; max-width: 720px">Policy analysis on geothermal finance, EV industrial strategy, climate finance and development, written at Columbia SIPA.</p>
 </section>
 
@@ -44,8 +73,8 @@ a{color:#0B5E52;text-decoration:none}a:hover{color:#06352E;text-decoration:under
 <h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 24px; font-weight: 600; line-height: 1.3">Beneath the Subsurface: Unlocking Hawaiʻi's Geothermal Potential</h2>
 <p style="margin: 0; color: #2B3A38">A financial model of a 38 MW geothermal project (12.6% unlevered IRR) across seven policy scenarios. A $45–60M state exploration program would cut the dry-well rate from 68% to 24%, and a BLM-style tiered royalty would lower the required PPA price to $57/MWh with no new public spending. Includes fieldwork on Oʻahu and Hawaiʻi Island with HSEO, UH Mānoa, state legislators and Puna Geothermal Venture.</p>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: auto; padding-top: 4px">
-<span style="font-size: 13px; font-weight: 500; padding: 4px 10px; border-radius: 999px; background: #E3F2EE; color: #0B4F45">Geothermal</span>
-<span style="font-size: 13px; font-weight: 500; padding: 4px 10px; border-radius: 999px; background: #E4ECF8; color: #1C4580">Project finance</span>
+<span style="font-size: 13px; font-weight: 500; padding: 4px 10px; border-radius: 999px; background: #D2F5E4; color: #05553A">Geothermal</span>
+<span style="font-size: 13px; font-weight: 500; padding: 4px 10px; border-radius: 999px; background: #D9E7FF; color: #123C86">Project finance</span>
 <a href="#" style="font-size: 14px; font-weight: 600; padding: 10px 0; margin-left: auto">PDF [ADD LINK]</a>
 </div>
 </article>
@@ -55,8 +84,8 @@ a{color:#0B5E52;text-decoration:none}a:hover{color:#06352E;text-decoration:under
 <h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 24px; font-weight: 600; line-height: 1.3">The EU's Industrial Policy in the EV Sector: Learning from China's Integrated EV and Critical Minerals Strategy</h2>
 <p style="margin: 0; color: #2B3A38">Traces three decades of Chinese NEV and battery policy against the EU's fragmented toolkit, and argues for EU-level demand-side support, battery production as a core policy goal, and long-term finance for critical-mineral exploration.</p>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: auto; padding-top: 4px">
-<span style="font-size: 13px; font-weight: 500; padding: 4px 10px; border-radius: 999px; background: #E3F2EE; color: #0B4F45">EV policy</span>
-<span style="font-size: 13px; font-weight: 500; padding: 4px 10px; border-radius: 999px; background: #FCEFD9; color: #6E4300">Critical minerals</span>
+<span style="font-size: 13px; font-weight: 500; padding: 4px 10px; border-radius: 999px; background: #D2F5E4; color: #05553A">EV policy</span>
+<span style="font-size: 13px; font-weight: 500; padding: 4px 10px; border-radius: 999px; background: #FFEBB8; color: #6B4200">Critical minerals</span>
 <a href="#" style="font-size: 14px; font-weight: 600; padding: 10px 0; margin-left: auto">PDF [ADD LINK]</a>
 </div>
 </article>
@@ -66,8 +95,8 @@ a{color:#0B5E52;text-decoration:none}a:hover{color:#06352E;text-decoration:under
 <h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 24px; font-weight: 600; line-height: 1.3">Climate-Aligned Performance Benchmarks for Sovereign Borrowers</h2>
 <p style="margin: 0; color: #2B3A38">Proposes that the World Bank link concessional loan pricing to co-designed climate benchmarks, piloted with five to seven Sub-Saharan African borrowers, to close the accountability gap and cut the policy-risk premium on clean energy finance.</p>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: auto; padding-top: 4px">
-<span style="font-size: 13px; font-weight: 500; padding: 4px 10px; border-radius: 999px; background: #E4ECF8; color: #1C4580">Climate finance</span>
-<span style="font-size: 13px; font-weight: 500; padding: 4px 10px; border-radius: 999px; background: #FCEFD9; color: #6E4300">MDB reform</span>
+<span style="font-size: 13px; font-weight: 500; padding: 4px 10px; border-radius: 999px; background: #D9E7FF; color: #123C86">Climate finance</span>
+<span style="font-size: 13px; font-weight: 500; padding: 4px 10px; border-radius: 999px; background: #FFEBB8; color: #6B4200">MDB reform</span>
 <a href="#" style="font-size: 14px; font-weight: 600; padding: 10px 0; margin-left: auto">PDF [ADD LINK]</a>
 </div>
 </article>
@@ -84,7 +113,26 @@ a{color:#0B5E52;text-decoration:none}a:hover{color:#06352E;text-decoration:under
 
 </div>
 
-<div style="margin-top: 32px; padding: 24px 28px; background: #F4F7F6; border-radius: 12px; display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: baseline">
+
+<section style="margin-top: 48px">
+<h2 style="margin: 0 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 700">Fieldwork in Hawaiʻi</h2>
+<p style="margin: 0 0 24px; font-size: 17px; color: #2B3A38; max-width: 760px">In March 2026 our practicum team met the people shaping Hawaiʻi's geothermal future: researchers at the University of Hawaiʻi at Mānoa, the Hawaiʻi State Energy Office, State Representative Nicole Lowen, Chair of the House Committee on Energy and Environmental Protection, and the operators of Puna Geothermal Venture. Seeing permitting, interconnection, community engagement and financing play out on the ground shaped our final analysis.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px">
+<figure style="margin: 0">
+<img src="fieldwork-hseo.jpg" alt="The practicum team with staff at the Hawaiʻi State Energy Office" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 10px">
+<figcaption style="margin-top: 8px; font-size: 14px; color: #4A5856">Hawaiʻi State Energy Office, Honolulu</figcaption>
+</figure>
+<figure style="margin: 0">
+<img src="fieldwork-capitol.jpg" alt="The practicum team outside the Hawaiʻi State Capitol" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 10px">
+<figcaption style="margin-top: 8px; font-size: 14px; color: #4A5856">Hawaiʻi State Capitol, Honolulu</figcaption>
+</figure>
+<figure style="margin: 0">
+<img src="fieldwork-pgv.jpg" alt="The practicum team with Mike Kaleikini at the Puna Geothermal Venture sign" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 10px">
+<figcaption style="margin-top: 8px; font-size: 14px; color: #4A5856">Puna Geothermal Venture, Hawaiʻi Island</figcaption>
+</figure>
+</div>
+</section>
+<div style="margin-top: 32px; padding: 24px 28px; background: #EEF3F8; border-radius: 12px; display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: baseline">
 <p style="margin: 0; font-size: 14px; font-weight: 600; color: #4A5856">Forthcoming</p>
 <p style="margin: 0; flex: 999 1 480px">Report to the Hawaiʻi State Legislature on geothermal development, co-authored at the Hawaiʻi State Energy Office.</p>
 </div>

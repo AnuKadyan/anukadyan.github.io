@@ -13,31 +13,60 @@
 body{margin:0;background:#FFFFFF}
 a{color:#0B5E52;text-decoration:none}a:hover{color:#06352E;text-decoration:underline}
 </style>
+<style>
+/* Bold & energetic theme */
+:root{--navy:#0B1B2B;--navy2:#13283D;--volt:#3DDC97;--amber:#FFB020}
+body{background:#FFFFFF}
+a{color:#0A7A52}a:hover{color:#06573A}
+header{background:var(--navy)!important;border-bottom:0!important;position:sticky;top:0;z-index:10}
+header > div > a{color:#FFFFFF!important}
+header nav a{color:#D3E0EC!important}
+header nav a:hover{color:#FFFFFF!important;text-decoration:none!important}
+header nav a[aria-current]{color:var(--volt)!important}
+main > section:first-of-type{border-image:linear-gradient(var(--navy) 0 0) fill 0 / 0 / 0 100vmax;background:var(--navy)}
+header + main, header ~ main{margin-top:0}
+@media (max-width:640px){main > section:first-of-type h1{font-size:44px!important}}
+main > section:first-of-type h1{color:#FFFFFF!important}
+main > section:first-of-type p{color:#C9D7E4!important}
+main > section:first-of-type p:first-child{color:var(--volt)!important}
+main > section:first-of-type a{color:#7FE8B8!important}
+main > section:first-of-type a[style*="background"]{background:var(--volt)!important;color:var(--navy)!important}
+main > section:first-of-type a[style*="border: 1px"]{color:#FFFFFF!important;border-color:#4A6580!important}
+main > section:first-of-type a[style*="border: 1px"]:hover{border-color:var(--volt)!important;text-decoration:none}
+main > section:first-of-type img{box-shadow:0 0 0 6px var(--volt)}
+main > section:first-of-type button.chip{background:transparent;color:#FFFFFF;border-color:#4A6580}
+main > section:first-of-type button.chip[aria-pressed="true"]{background:var(--volt);border-color:var(--volt);color:var(--navy)}
+h2{letter-spacing:-0.02em}
+main > section:first-of-type + section{padding-top:48px!important}
+footer{background:var(--navy)!important;border-top:4px solid var(--volt)!important}
+footer p, footer span{color:#AFC0D0!important}
+footer a{color:var(--volt)!important}
+</style>
 </head>
 <body>
-<div style="width: 100%; min-height: 100vh; background: #FFFFFF; color: #13211F; font-family: Inter, system-ui, sans-serif; font-size: 16px; line-height: 1.6">
+<div style="width: 100%; min-height: 100vh; background: #FFFFFF; color: #0B1B2B; font-family: Inter, system-ui, sans-serif; font-size: 16px; line-height: 1.6">
 
 <header style="border-bottom: 1px solid #E3E8E7; background: #FFFFFF">
 <div style="max-width: 1120px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
-<a href="index.html" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px; color: #13211F; letter-spacing: -0.01em">Anu Kadyan</a>
+<a href="index.html" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px; color: #0B1B2B; letter-spacing: -0.01em">Anu Kadyan</a>
 <nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 4px 24px; font-size: 15px; font-weight: 500">
-<a href="research.html" aria-current="page" style="color: #0B5E52; padding: 10px 0; font-weight: 600; text-decoration: underline; text-underline-offset: 6px">Research</a>
-<a href="policy.html" style="color: #13211F; padding: 10px 0">Policy papers</a>
-<a href="talks.html" style="color: #13211F; padding: 10px 0">Writing &amp; talks</a>
-<a href="archive.html" style="color: #13211F; padding: 10px 0">Archive</a>
-<a href="cv.html" style="color: #13211F; padding: 10px 0">CV</a>
+<a href="research.html" aria-current="page" style="color: #0A7A52; padding: 10px 0; font-weight: 600; text-decoration: underline; text-underline-offset: 6px">Research</a>
+<a href="policy.html" style="color: #0B1B2B; padding: 10px 0">Policy papers</a>
+<a href="talks.html" style="color: #0B1B2B; padding: 10px 0">Writing &amp; talks</a>
+<a href="archive.html" style="color: #0B1B2B; padding: 10px 0">Archive</a>
+<a href="cv.html" style="color: #0B1B2B; padding: 10px 0">CV</a>
 </nav>
 </div>
 </header>
 
 <main>
 <section style="max-width: 1120px; margin: 0 auto; padding: 64px 24px 40px">
-<h1 style="margin: 0 0 16px; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 48px; line-height: 1.1; letter-spacing: -0.02em">Research</h1>
-<p style="margin: 0; font-size: 19px; color: #2B3A38; max-width: 720px">My research covers the economics of energy storage, the supply chains behind clean electrification, and how grids absorb new loads like electric fleets and data centers. It rests on a decade of laboratory work in physical chemistry.</p>
+<h1 style="margin: 0 0 16px; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 60px; line-height: 1.05; letter-spacing: -0.02em">Research</h1>
+<p style="margin: 0; font-size: 19px; color: #2B3A38; max-width: 720px">My research covers the economics of energy storage, the supply chains behind clean electrification, and how grids absorb new loads like electric fleets and data centers. It rests on a decade of laboratory work in chemistry.</p>
 </section>
 
 <section style="max-width: 1120px; margin: 0 auto; padding: 8px 24px 40px">
-<h2 style="margin: 0 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 600">Current projects</h2>
+<h2 style="margin: 0 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 700">Current projects</h2>
 
 <article style="display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 28px 0; border-bottom: 1px solid #E3E8E7">
 <p style="flex: 0 0 160px; margin: 0; font-size: 14px; font-weight: 600; color: #4A5856">2026–now</p>
@@ -66,20 +95,29 @@ a{color:#0B5E52;text-decoration:none}a:hover{color:#06352E;text-decoration:under
 </div>
 </article>
 
+<article style="display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 28px 0; border-bottom: 1px solid #E3E8E7">
+<p style="flex: 0 0 160px; margin: 0; font-size: 14px; font-weight: 600; color: #4A5856">2026</p>
+<div style="flex: 999 1 520px; min-width: 0">
+<h3 style="margin: 0 0 6px; font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600"><a href="talks.html" style="color: #0B1B2B">Second-life EV batteries for data centers →</a></h3>
+<p style="margin: 0 0 8px; font-size: 15px; color: #4A5856">Landscape assessment · World Resources Institute</p>
+<p style="margin: 0; color: #2B3A38">How data centers can catalyze battery circularity in the U.S. by putting retired EV packs to work as stationary storage. The research shaped a closed-door stakeholder session at Climate Week NYC 2026.</p>
+</div>
+</article>
+
 <article style="display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 28px 0">
 <p style="flex: 0 0 160px; margin: 0; font-size: 14px; font-weight: 600; color: #4A5856">2026</p>
 <div style="flex: 999 1 520px; min-width: 0">
-<h3 style="margin: 0 0 6px; font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600"><a href="policy.html" style="color: #13211F">Geothermal finance for Hawaiʻi →</a></h3>
+<h3 style="margin: 0 0 6px; font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600"><a href="policy.html" style="color: #0B1B2B">Geothermal finance for Hawaiʻi →</a></h3>
 <p style="margin: 0 0 8px; font-size: 15px; color: #4A5856">SIPA CEE Practicum and Hawaiʻi State Energy Office</p>
 <p style="margin: 0; color: #2B3A38">Project finance modeling and policy design for Hawaiʻi's geothermal resources. A follow-on report to the State Legislature is forthcoming.</p>
 </div>
 </article>
 </section>
 
-<section id="publications" style="background: #F4F7F6; border-top: 1px solid #E3E8E7">
+<section id="publications" style="background: #EEF3F8; border-top: 1px solid #E3E8E7">
 <div style="max-width: 1120px; margin: 0 auto; padding: 56px 24px 56px">
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 8px">
-<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 600">Peer-reviewed publications</h2>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 700">Peer-reviewed publications</h2>
 <a href="https://scholar.google.com/citations?user=Tr4B36cAAAAJ&amp;hl=en" style="font-size: 15px; font-weight: 500">Google Scholar →</a>
 </div>
 <p style="margin: 0 0 16px; color: #44524F">From my PhD on green solvents at IIT Delhi.</p>
@@ -95,6 +133,7 @@ a{color:#0B5E52;text-decoration:none}a:hover{color:#06352E;text-decoration:under
 <div style="margin-top: 32px; padding: 24px; background: #FFFFFF; border: 1px solid #E3E8E7; border-radius: 12px">
 <p style="margin: 0 0 4px; font-size: 14px; font-weight: 600; color: #4A5856">PhD thesis · IIT Delhi · 2019</p>
 <p style="margin: 0; font-weight: 600">Spectroscopic investigation within ionic liquid and deep eutectic solvent based systems</p>
+<p style="margin: 8px 0 0; color: #44524F">Awarded <strong style="font-weight: 600; color: #0A7A52">Distinction in Doctoral Research</strong> · Supervisor: Prof. Siddharth Pandey</p>
 </div>
 </div>
 </section>
